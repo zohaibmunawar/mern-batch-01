@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  color: blue;
+  background-color: bisque;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+p {
+  /* word-spacing: 5px; */
+  text-align: justify;
+  letter-spacing: 1px;
+  text-decoration: overline;
+  /* text-indent: 50px; */
+  text-transform: lowercase;
+  font-weight: bold;
+  font-style: italic;
+  font-size: larger;
+  background-color: red;
+
+  /* text-wrap: nowrap;
+  overflow: hidden;
+  width: 100px;
+  text-overflow: ellipsis; */
+  line-height: 50px;
+}
+
+span {
+  vertical-align: sub;
+  vertical-align: super;
+  background-color: blue;
+}
+
+.outer {
+  background-color: green;
+  height: 200px;
+  line-height: 100px;
+  /* padding-top: 50%; */
+}
+.inner {
+  background-color: burlywood;
+  width: 50%;
+  height: 50px;
+}

@@ -1,0 +1,27 @@
+.div{
+  width: 100px;
+  height: 100px;
+}
+
+.div1{
+  background-color: orange;
+}
+.div2{
+  background-color: violet;
+  /* flex-grow: 1; */
+  /* width: 290px; */
+}
+.div3{
+  background-color: green;
+}
+
+.flexbox{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: end; */
+  gap: 10px;
+
+  height: 400px;
+  background-color: aqua;
+}
