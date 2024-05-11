@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  margin: 50px 0px 0px 50px;
+  padding: 5px 10px;
+  background-color: tomato;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+/* link */
+/* visited */
+/* hover */
+/* active */
+
+a:hover {
+  background-color: red;
+}
+
+a:active {
+  background-color: limegreen;
+}

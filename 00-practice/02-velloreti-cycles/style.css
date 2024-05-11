@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+body {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* px */
+/* vw */
+/* vh */
+
+/* rem */
+/* em */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F3HjEVHa810tlroFi3Nm9zX%2F3514c4b07af74bb79c431f7026b94783%2FHomepage_banner_Ivy_and_Ace_Two_1_NEW.jpg&w=1080&q=75");
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+  color: white;
+  /* position: relative; */
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  background-color: red;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 5rem;
+}
+
+.menu {
+  display: flex;
+  background-color: green;
+}
+
+.icons {
+  background-color: blue;
+}

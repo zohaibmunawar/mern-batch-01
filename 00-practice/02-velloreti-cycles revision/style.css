@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .center {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+} */
+
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.bg-navbar {
+  background-color: white;
+}
+
+button {
+  outline: none;
+  border: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+nav {
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  background: white;
+}
+
+.navigation_menu {
+  /* background-color: brown; */
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icons {
+  /* background: greenyellow; */
+  display: flex;
+  gap: 4rem;
+  font-size: 1rem;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F3HjEVHa810tlroFi3Nm9zX%2F3514c4b07af74bb79c431f7026b94783%2FHomepage_banner_Ivy_and_Ace_Two_1_NEW.jpg&w=1080&q=75");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+  color: white;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  z-index: 10;
+}
+
+.content {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+}
+
+header h3 {
+  font-size: 3rem;
+}
+header p {
+  font-size: 0.8rem;
+}
+
+header div.cta_buttons {
+  position: absolute;
+  right: 2rem;
+  bottom: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+header div.cta_buttons button {
+  border-radius: 3rem;
+  padding: 0.7rem 1.4rem;
+}
+
+header div.cta_buttons button.buy_now {
+  background: white;
+}
+
+header div.cta_buttons button.buy_now {
+  background: white;
+}
+
+header div.cta_buttons button.buy_now:hover {
+  background: black;
+  color: white;
+}
+
+header div.cta_buttons button.learn_button {
+  background: transparent;
+}
