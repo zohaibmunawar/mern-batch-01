@@ -36,11 +36,11 @@ header {
   justify-content: center;
   gap: 0.7rem;
   color: white;
-  /* position: relative; */
+  position: relative;
 }
 
 nav {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   display: flex;
   background-color: red;
@@ -61,4 +61,11 @@ nav {
 
 .icons {
   background-color: blue;
+}
+
+header h3 {
+  font-size: 3rem;
+}
+header p {
+  font-size: 0.8rem;
 }
