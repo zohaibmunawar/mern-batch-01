@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 button {
@@ -11,8 +12,8 @@ button {
 }
 
 span {
-  display: block;
-  flex-shrink: 0;
+  display: inline-block;
+  /* flex-shrink: 0; */
 }
 
 .card-wrapper {
@@ -28,6 +29,10 @@ p {
   margin-top: 10px;
 }
 
+h1 {
+  font-weight: 500;
+}
+
 h1 span {
   font-size: 10px;
   vertical-align: super;
@@ -39,6 +44,13 @@ h1 span {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  background-color: red;
+  position: relative;
+}
+
+.right-icon {
+  position: absolute;
+  right: 0;
 }
 
 img {
@@ -89,16 +101,16 @@ img {
   align-items: center;
 }
 
-/* .pallete {
-  background-color: green;
-  height: 100px;
-} */
+.pallete {
+  display: flex;
+  gap: 10px;
+}
 
 .circle-wrapper {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   padding: 5px;
+  border-radius: 50%;
   border: 1px solid black;
 }
 
