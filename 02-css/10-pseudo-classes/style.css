@@ -4,24 +4,23 @@
   box-sizing: border-box;
 }
 
-a {
-  margin: 50px 0px 0px 50px;
-  padding: 5px 10px;
-  background-color: tomato;
+a:link {
   display: inline-block;
+  font-size: xx-large;
+  padding: 10px 20px;
+  background-color: tomato;
   text-decoration: none;
-  color: white;
+  color: black;
+  margin: 100px 200px;
+  outline: none;
+  border: none;
 }
-
-/* link */
-/* visited */
-/* hover */
-/* active */
 
 a:hover {
-  background-color: red;
+  background-color: hotpink;
 }
 
-a:active {
-  background-color: limegreen;
-}
+/* link
+visited
+hover
+active */
