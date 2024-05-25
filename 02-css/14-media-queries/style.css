@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --color1: #ffbd00;
+  --color2: #ff5400;
+  --color3: #ff0054;
+  --color4: #9e0059;
+  --color5: #390099;
+}
+
+/* ffbd00
+ff5400
+ff0054
+9e0059
+390099 */
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+/* min-width
+max-width */
+
+/* .element {
+  width: 400px;
+  height: 200px;
+  color: white;
+
+  background-color: #390099;
+}
+
+.element1 {
+  position: absolute;
+}
+
+.element2 {
+  z-index: 100;
+  position: absolute;
+} */
+
+/* Screen sizes */
+
+/* - 640
+768
+1024 + */
+
+/* main {
+  min-width: 600px;
+  max-width: 600px;
+  background-color: #ff0054;
+  height: 100vh;
+} */
+
+/* screen
+speech
+print */
+
+/* @media type resolution-breakpoint {
+} */
+
+body {
+  background-color: #ffbd00;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-color: #390099;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  body {
+    background-color: #ff0054;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: #ff5400;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background: green;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background: red;
+  }
+}
