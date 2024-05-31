@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --color1: #ffbd00;
+  --color2: #ff5400;
+  --color3: #ff0054;
+  --color4: #9e0059;
+  --color5: #390099;
+}
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+body {
+  background-image: url("../02-css/15-filters/sample.png");
+}
+
+.wrapper {
+  width: 100%;
+  height: 300px;
+}

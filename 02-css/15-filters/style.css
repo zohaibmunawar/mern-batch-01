@@ -17,44 +17,70 @@ html {
   font-size: calc(10px + 1vmin);
 }
 
-/* div {
-  background-color: #390099;
-} */
-
 main {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f6f6f6;
-  background-image: url("./sample.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  gap: 2px;
 }
 
-div.inner {
-  position: absolute;
-  z-index: 1;
-  width: 700px;
+div.card {
+  width: 300px;
   height: 400px;
-  background: linear-gradient(-45deg, #e600ff63, #00068068);
+
   border-radius: 10px;
-  animation: colorize 2s infinite alternate-reverse;
-  backdrop-filter: blur(5px);
-  /* background-color: #ffffff00; */
+}
+
+div.lower {
+  position: relative;
+  /* background-color: #390099; */
+}
+
+div.upper {
+  /* opacity: 0.5; */
+  /* background-color: red; */
+  position: absolute;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid #707070;
+  /* z-index: 10; */
 }
 
 div.circle {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: absolute;
-
-  border-radius: 50%;
+  border-radius: 43% 57% 70% 30% / 30% 30% 70% 70%;
   background: #10b488;
-  /* box-shadow: 0px 0px 100px 10px white; */
+  /* border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 25%; */
+}
 
-  z-index: -10;
+div.circle1 {
+  bottom: 50px;
+  animation: moveUpDown 2s alternate-reverse infinite;
+}
+
+div.circle2 {
+  left: 50px;
+  animation: moveRightLeft 2s alternate-reverse infinite;
+}
+
+@keyframes moveUpDown {
+  to {
+    bottom: -50px;
+  }
+}
+
+@keyframes moveRightLeft {
+  to {
+    left: -50px;
+  }
 }
 
 @keyframes colorize {
@@ -62,37 +88,3 @@ div.circle {
     filter: hue-rotate(90deg);
   }
 }
-
-/* div.inner {
-  width: 700px;
-  height: 400px;
-  background-color: #ffffff39;
-  opacity: 0.5;
-  user-select: none;
-
-  backdrop-filter: blur(10px) hue-rotate(50deg);
-  backdrop-filter: sepia(50%);
-  backdrop-filter: hue-rotate(50deg);
-
-  backdrop-filter: invert(100%);
-
-  -webkit-backdrop-filter: contrast(200%);
-  backdrop-filter: contrast(200%);
-   backdrop-filter: brightness(100%);
-  backdrop-filter: contrast(100%);
-
-  filter: opacity(0.5);
-}
-
-div.inner::selection {
-  background-color: rgb(205, 255, 67);
-}
-
-img {
-  box-shadow: 10px 10px 20px 100px black;
-
-  -webkit-backdrop-filter: drop-shadow(10px 10px 20px black);
-  backdrop-filter: drop-shadow(10px 10px 20px black);
-
-  filter: drop-shadow(10px 10px 4px #4444dd);
-} */
