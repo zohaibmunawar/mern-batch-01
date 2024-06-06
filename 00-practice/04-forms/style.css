@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --color1: #ffbd00;
+  --color2: #ff5400;
+  --color3: #ff0054;
+  --color4: #9e0059;
+  --color5: #390099;
+}
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+label,
+input,
+select {
+  display: block;
+  width: 100%;
+}
+
+div.input-wrapper {
+  flex-grow: 1;
+  min-width: 13rem;
+  width: 0;
+  background-color: tomato;
+}
+
+div.flex-wrapper {
+  background-color: red;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+form {
+  width: 45rem;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
