@@ -13,50 +13,87 @@
   --color5: #390099;
 }
 
-html {
+html,
+body {
   font-size: calc(10px + 1vmin);
+  height: 100%;
 }
 
-main {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+  padding: 2rem;
 }
 
-div.grid-container {
+main.grid-container {
+  width: 100%;
+  /* height: 100%; */
   display: grid;
-  /* grid-template-rows: 70px 70px 70px 70px 70px; */
-  /* grid-template-columns: 70px 70px 70px 70px 70px; */
+  background: #464646;
 
-  /* grid-template-rows: repeat(8, 1fr); */
-  /* grid-template-columns: repeat(5, 70px); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
 
-  width: 90vw;
-  height: 400px;
-  background-color: #181818;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.3fr repeat(4, 1fr);
 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+  gap: 0.6rem;
 
-  grid-auto-rows: 1fr;
-
-  gap: 10px;
-
-  /* align-items: center;
-  justify-items: center; */
-  /* 
-  align-content: space-between;
-  justify-content: space-between; */
-
-  /* grid-template-columns: 1fr 600px 1fr; */
+  grid-template-areas:
+    "sidebar navbar navbar navbar"
+    "sidebar card1 card2 card3"
+    "sidebar content content content"
+    "sidebar content content content"
+    "sidebar content content content"; */
 }
 
-.grid-item {
-  background-color: var(--color2);
+/* main.grid-container > nav {
+  grid-area: navbar;
+  background: #ff0054;
 }
 
-.grid-item2 {
-  background-color: var(--color4);
+main.grid-container > aside {
+  grid-area: sidebar;
+  background: #ffbd00;
+}
+
+main.grid-container > div.card1 {
+  grid-area: card1;
+  background: #9e0059;
+}
+main.grid-container > div.card2 {
+  grid-area: card2;
+  background: #9e0059;
+}
+main.grid-container > div.card3 {
+  grid-area: card3;
+  background: #9e0059;
+}
+
+main.grid-container > main.content {
+  grid-area: content;
+  background: #390099;
+} */
+
+main.grid-container > article:nth-child(1) {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+main.grid-container > article img {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+  main.grid-container {
+    grid-template-columns: 100%;
+  }
+
+  /* main.grid-container > article {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+  } */
 }
