@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --color1: #ffbd00;
+  --color2: #ff5400;
+  --color3: #ff0054;
+  --color4: #9e0059;
+  --color5: #390099;
+}
+
+* {
+  color: white;
+}
+
+html,
+body {
+  font-size: calc(10px + 1vmin);
+  height: 100%;
+  background: #050505;
+}
+
+.grid-cols-12 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-wrapper {
+  background: #050505;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100vh;
+  /* justify-items: center; */
+  /* align-items: center; */
+}
+
+nav {
+  background: #390099;
+  grid-column: 1/-1;
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+main {
+  background: #ff0054;
+  grid-column: 1/-1;
+
+  /* width: 100%; */
+  width: 700px;
+  justify-self: center;
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* margin: auto; */
+}
+footer {
+  background: #ffbd00;
+  grid-column: 1/-1;
+}
+
+/* .flexbox {
+  width: 400px;
+  height: 500px;
+  background-color: antiquewhite;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.item {
+  background-color: #ff5400;
+}
+
+div.navbar {
+  height: 5%;
+  background-color: #9e0059;
+}
+
+div.main {
+  width: 700px;
+  margin: auto;
+  height: 85%;
+  background-color: #ff5400;
+}
+
+div.footer {
+  height: 10%;
+  background-color: #ffbd00;
+}
+
+.logo {
+  background-color: blueviolet;
+  grid-column: span 2;
+}
+.menu {
+  background-color: green;
+  grid-column: span 7;
+}
+.actions {
+  background-color: blue;
+  grid-column: span 3;
+}
